@@ -1,0 +1,94 @@
+/*ALL*/
+body {
+    /*Suppresion des marges du body pour coller les éléments au bord.*/
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: "RobotoRegular";
+    background-color: #fdfdfd;
+    outline-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+
+@font-face {
+    font-family: "RobotoRegular";
+    src: url('../assets/Fonts/Roboto-Regular.ttf');
+}
+@font-face {
+    font-family: RobotoBold;
+    src: url('../assets/Fonts/Roboto-Bold.ttf');
+}
+
+/* Contenu */ 
+body p{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.contact {
+    font-family: RobotoRegular;
+    outline-style: none;
+}
+
+.contact form {
+    width: 30%;
+    min-width: 450px;
+    background-color: #f0f0f0;
+    margin: auto;
+    margin-top: 50px;
+    font-family: RobotoRegular;
+    outline-style: none;
+    border-radius: 15px;
+}
+.contact form .user-content--contacter {
+    width: 100%;
+    padding: 40px;
+    margin: auto;
+}
+
+.contact form label {
+    margin-top: 15px;
+}
+
+.contact form input {
+    animation: ease-in-out;
+    outline-style: none;
+    transition-duration: 0.3s;
+    border:none;
+    padding: 10px;
+    border-bottom: 2px solid #F3F4F7;
+    border-left: 2px solid #f0f0f0;
+    margin-left: -2px;
+}
+.contact form input:focus {
+    border-bottom: 2px solid #B1E0B9;
+}
+textarea{
+    outline-style: none;
+}
+
+#pays {
+    width: 150%;
+    padding: 10px;
+}
+#know {
+    width: 75%;
+    padding: 10px;
+    border-left: 1px solid #000000;
+    margin-left: -2px;
+}
+
+.contact form input[type=submit]{
+    width: 75%;
+    margin-left: 5%;
+    margin-top: 5%;
+    border-radius: 5px;
+    padding: 17.5px 25px 17.5px 25px;
+    background-color: #B1E0B9;
+}
+
+
+

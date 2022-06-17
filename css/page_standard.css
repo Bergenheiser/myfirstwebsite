@@ -1,0 +1,130 @@
+/*Contenue de la page*/
+main {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 5vh;
+    align-items:center;}
+
+
+.corpus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    margin-top: 5vh;
+    border-radius: 50px;
+    border: 2px solid #d0d0d5;
+    box-shadow: 6px 5px 5px rgb(222, 216, 215 );
+}
+
+
+main .corpus {
+    max-width: 100%;
+    width: 50%;
+    font-size: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink:  2;
+    clear: both;
+    margin-top:5vh;
+
+    border-radius: 2vh;
+    border: 2px solid #d0d0d5;
+    box-shadow: 6px 5px 5px rgb(222, 216, 215 );
+}
+.section_title{
+    width: 40%;
+    font-size: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 12.5vh;
+    margin-left: 2vh;
+
+    border-radius: 2vh;
+    border: 2px solid #d0d0d5;
+    box-shadow: 6px 5px 5px #B1E0B9;
+    
+}
+h4{
+margin: auto;
+padding: 0.5vh;
+flex-shrink: 1;
+text-align: center;
+font-family: "RobotoRegular";
+}
+h4::first-letter{
+    color:#50b962;
+    font-size:3vh;
+}
+
+/*Si la page est en dessous de 992px*/
+@media(max-width:992px){
+    .section_title{
+        width: 50%;
+
+        border: 2px solid #d0d0d5;
+        box-shadow: 6px 5px 5px #B1E0B9;}
+        
+    
+    main{flex-direction:column;
+        padding:0;
+        flex-wrap: wrap;
+        align-items:center;}
+
+    main> .corpus{
+        margin-left:auto;
+        margin-right:auto;
+        width:90%;
+        font-size:2vh;
+        font-family: RobotoBold;
+    }
+    .image{
+        position:relative;
+        width: 90%;
+        clear: both;
+        flex-grow: 3;
+        border-radius: 3vh;
+        box-shadow: 6px 5px 5px rgb(222, 216, 215 );
+        margin-top: 5vh;
+        border: solid 0.25vh #d0d0d5;
+    }
+}
+    
+/*Si la page est au dessus de 992px*/
+@media(min-width:992px){
+
+    main{flex-direction:row;
+            padding:0;
+            flex-wrap: wrap;
+            align-items:center;}
+    
+    main> .corpus{
+            margin-left:auto;
+            margin-right:auto;
+            width:90%;
+            font-size:2vh;
+            font-family: RobotoBold;
+        }
+    nav.desktop{display:flex;}
+    nav.mobile{display:none;}
+        
+    .image{
+    /* paramètre de responsivité du design*/
+        width: 20%;
+        height:auto;
+        margin:1vh;
+        align-items:center;
+        clear:both;
+        border-radius: 3vh;
+        box-shadow: 6px 5px 5px rgb(222, 216, 215 );
+        margin-top: 5vh;
+        flex-shrink: 1;
+        flex-grow: 1;
+    }
+    
+}

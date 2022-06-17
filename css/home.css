@@ -1,0 +1,111 @@
+/*HOME*/
+/*On sélectionne la classe 'imageHomeOpenSpace'*/
+.imageHomeOpenSpace {
+    width: 100%;
+    max-width: 100%;
+    z-index:2;
+    border-bottom: 5px solid #B1E0B9;
+}
+
+.headerHome{
+    background-color: #e9e9e9;
+    width: 75%;
+    margin-top: -5.5vh;
+    margin-left: 12vw;
+    position: relative;
+    z-index: 2;
+}
+
+.home {
+    margin: auto;
+    position: relative;
+    margin-top: 10vh;
+    position:relative;
+    width: 90%;
+    clear: both;
+    flex-grow: 3;
+    border-radius: 1vh;
+    margin-top: 10vh;
+}
+.widthHome {
+    width: 70vw;
+    margin: auto;
+    text-align: justify;
+}
+
+/*Header to page Home*/
+.headerHome h1 {
+    text-align: center;
+}
+.headerHome h3{
+    text-align: center;
+
+    
+}
+body #title{
+    border:2.5px solid black;
+    padding: 3px;
+    box-shadow: 6px 5px 5px #B1E0B9;
+    text-shadow: 5px 5px rgb(222, 216, 215 );
+    z-index: 1;
+}
+
+
+/*Under header, home page*/
+.introHome {
+    text-align: justify;
+}
+
+.ligne {
+    text-align: justify;
+    text-align: center;
+    margin-top: 1vh;
+    margin-bottom: 20px;
+    width: 100%;
+    color: #B1E0B9;
+}
+
+
+/* Contenu */ 
+body p{
+    text-align: justify;
+    text-justify: inter-word;
+
+}
+body > div.home > p.introHome.widthHome{
+    margin-top:5vh;
+}
+
+body > div.home > img{
+    position:relative;
+    width: 50%;
+    height: 10%;
+    margin-left:25%;
+    margin-right:auto;
+    clear: both;
+    flex-grow: 3;
+    border-radius: 3vh;
+    box-shadow: 6px 5px 5px rgb(222, 216, 215 );
+    margin-top: 5vh;
+    border: solid 0.25vh #d0d0d5;}
+
+.acteur h4 {
+    justify-content: flex-start;
+}
+
+
+/* Comme tout bon principe, une exeption à la règle,*/
+
+@media (max-width:992px){
+body > div.home > img{
+        position:relative;
+        justify-content: center;
+        width: 90%;
+        margin-left: 2vh;
+        clear: both;
+        flex-grow: 3;
+        border-radius: 3vh;
+        box-shadow: 6px 5px 5px rgb(222, 216, 215 );
+        margin-top: 5vh;
+        border: solid 0.25vh #d0d0d5;}
+}
